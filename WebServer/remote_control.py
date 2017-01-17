@@ -19,7 +19,7 @@ def index():
     print('I got a request')
     pool = Pool(processes=1)
     pool.apply_async(light_up)
-    return 'Hello worlds'
+    return 'Hello world'
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
